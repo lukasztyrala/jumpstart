@@ -1,7 +1,47 @@
+
 JUMPSTART
+=========
 
-A simple project to jumpstart your basic html5 mark-up. It includes various usefull meta elements (e.g. seo stuff, viewport configuration, microformat profiles rels, etc.).
+.----------------------------------------------------------------------------.
+| A simple project to jumpstart your basic HTML5 mark-up and some CSS styles |
+'----------------------------------------------------------------------------'
 
-Licence: MIT licence
 
-More to come soon
+1. About
+--------
+
+Jumpstart includes various usefull meta elements (e.g. seo stuff, viewport
+configuration, microformat profiles rels, etc.). The sample code has many
+references to arcticles and docs.
+
+In includes some CSS reset files that I find usefull or that are used by many.
+
+
+2. Usage
+--------
+
+Copy-paste method is the most convenient way to use this stuff.
+
+
+3. Licence [http://www.opensource.org/licenses/mit-license.php]
+---------------------------------------------------------------
+
+Copyright © 2010 Łukasz Tyrała (lukasztyrala.pl)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
