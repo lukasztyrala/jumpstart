@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* [ref]
+ * As copy-pased form http://www.w3.org/TR/html5/rendering.html on
+ * 22 September 2010.
+ */
+
+/* Display types */
+
+[hidden], area, base, basefont, command, datalist, head,
+input[type=hidden], link, menu[type=context], meta, noembed, noframes,
+param, rp, script, source, style, track, title { 
+  display: none;
+}
+
+address, article, aside, blockquote, body, center, dd, dir, div, dl,
+dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,
+hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre,
+section, summary, ul, xmp { 
+  display: block;
+}
+
+table { display: table; }
+caption { display: table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; }
+td, th { display: table-cell; }
+
+li { display: list-item;}
+
+ruby { display: ruby;}
+rt { display: ruby-text;}
+
+/* Margins and paddings */
+
+blockquote, dir, dl, figure, listing, menu, ol, p, plaintext,
+pre, ul, xmp {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+dir dir, dir dl, dir menu, dir ol, dir ul,
+dl dir, dl dl, dl menu, dl ol, dl ul,
+menu dir, menu dl, menu menu, menu ol, menu ul,
+ol dir, ol dl, ol menu, ol ol, ol ul,
+ul dir, ul dl, ul menu, ul ol, ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 { margin-top: 0.67em; margin-bottom; 0.67em; }
+h2 { margin-top: 0.83em; margin-bottom; 0.83em; }
+h3 { margin-top: 1.00em; margin-bottom; 1.00em; }
+h4 { margin-top: 1.33em; margin-bottom; 1.33em; }
+h5 { margin-top: 1.67em; margin-bottom; 1.67em; }
+h6 { margin-top: 2.33em; margin-bottom; 2.33em; }
+
+dd { margin-left: 40px; } /* LTR-specific: use 'margin-right' for rtl elements */
+
+dir, menu, ol, ul { padding-left: 40px; } /* LTR-specific: use 'padding-right' for rtl elements */
+
+blockquote, figure { 
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+table { 
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+td, th {
+  padding: 1px;
+}
+
+/* Alignment */
+
+thead, tbody, tfoot, table > tr { vertical-align: middle; }
+tr, td, th { vertical-align: inherit; }
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+th { text-align: center; }
+
+table[align=left] { float: left; } 
+table[align=right] { float: right; } 
+table[align=center], table[align=abscenter],
+table[align=absmiddle], table[align=middle] { 
+  margin-left: auto; margin-right: auto;
+}
+thead[align=absmiddle], tbody[align=absmiddle], tfoot[align=absmiddle],
+tr[align=absmiddle], td[align=absmiddle], th[align=absmiddle] {
+  text-align: center;
+}
+
+caption[align=bottom] { caption-side: bottom; } 
+p[align=left], h1[align=left], h2[align=left], h3[align=left],
+h4[align=left], h5[align=left], h6[align=left] { 
+  text-align: left;
+}
+p[align=right], h1[align=right], h2[align=right], h3[align=right],
+h4[align=right], h5[align=right], h6[align=right] { 
+  text-align: right;
+}
+p[align=center], h1[align=center], h2[align=center], h3[align=center],
+h4[align=center], h5[align=center], h6[align=center] { 
+  text-align: center;
+}
+p[align=justify], h1[align=justify], h2[align=justify], h3[align=justify],
+h4[align=justify], h5[align=justify], h6[align=justify] { 
+  text-align: justify;
+}
+col[valign=top], thead[valign=top], tbody[valign=top],
+tfoot[valign=top], tr[valign=top], td[valign=top], th[valign=top] { 
+  vertical-align: top;
+}
+col[valign=middle], thead[valign=middle], tbody[valign=middle],
+tfoot[valign=middle], tr[valign=middle], td[valign=middle], th[valign=middle] { 
+  vertical-align: middle;
+}
+col[valign=bottom], thead[valign=bottom], tbody[valign=bottom],
+tfoot[valign=bottom], tr[valign=bottom], td[valign=bottom], th[valign=bottom] { 
+  vertical-align: bottom;
+}
+col[valign=baseline], thead[valign=baseline], tbody[valign=baseline],
+tfoot[valign=baseline], tr[valign=baseline], td[valign=baseline], th[valign=baseline] { 
+  vertical-align: baseline;
+}
+
+/* Fonts and colors */
+
+address, cite, dfn, em, i, var { font-style: italic; }
+b, strong, th { font-weight: bold; }
+code, kbd, listing, plaintext, pre, samp, tt, xmp { font-family: monospace; }
+h1 { font-size: 2.00em; font-weight: bold; }
+h2 { font-size: 1.50em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+h4 { font-size: 1.00em; font-weight: bold; }
+h5 { font-size: 0.83em; font-weight: bold; }
+h6 { font-size: 0.67em; font-weight: bold; }
+big { font-size: larger; }
+small, sub, sup { font-size: smaller; }
+sub, sup { line-height: normal; }
+
+:link { color: blue; }
+:visited { color: purple; }
+mark { background: yellow; color: black; }
+
+table, td, th { border-color: gray; }
+thead, tbody, tfoot, tr { border-color: inherit; }
+table[rules=none], table[rules=groups], table[rules=rows],
+table[rules=cols], table[rules=all], table[frame=void],
+table[frame=above], table[frame=below], table[frame=hsides],
+table[frame=lhs], table[frame=rhs], table[frame=vsides],
+table[frame=box], table[frame=border],
+table[rules=none] > tr > td, table[rules=none] > tr > th,
+table[rules=groups] > tr > td, table[rules=groups] > tr > th,
+table[rules=rows] > tr > td, table[rules=rows] > tr > th,
+table[rules=cols] > tr > td, table[rules=cols] > tr > th,
+table[rules=all] > tr > td, table[rules=all] > tr > th,
+table[rules=none] > thead > tr > td, table[rules=none] > thead > tr > th,
+table[rules=groups] > thead > tr > td, table[rules=groups] > thead > tr > th,
+table[rules=rows] > thead > tr > td, table[rules=rows] > thead > tr > th,
+table[rules=cols] > thead > tr > td, table[rules=cols] > thead > tr > th,
+table[rules=all] > thead > tr > td, table[rules=all] > thead > tr > th,
+table[rules=none] > tbody > tr > td, table[rules=none] > tbody > tr > th,
+table[rules=groups] > tbody > tr > td, table[rules=groups] > tbody > tr > th,
+table[rules=rows] > tbody > tr > td, table[rules=rows] > tbody > tr > th,
+table[rules=cols] > tbody > tr > td, table[rules=cols] > tbody > tr > th,
+table[rules=all] > tbody > tr > td, table[rules=all] > tbody > tr > th,
+table[rules=none] > tfoot > tr > td, table[rules=none] > tfoot > tr > th,
+table[rules=groups] > tfoot > tr > td, table[rules=groups] > tfoot > tr > th,
+table[rules=rows] > tfoot > tr > td, table[rules=rows] > tfoot > tr > th,
+table[rules=cols] > tfoot > tr > td, table[rules=cols] > tfoot > tr > th,
+table[rules=all] > tfoot > tr > td, table[rules=all] > tfoot > tr > th { 
+  border-color: black;
+}
+
+x h1 { font-size: 1.50em; }
+x x h1 { font-size: 1.17em; }
+x x x h1 { font-size: 1.00em; }
+x x x x h1 { font-size: 0.83em; }
+x x x x x h1 { font-size: 0.67em; }
+
+/* Punctuation and decorations */
+
+:link, :visited, ins, u { text-decoration: underline; }
+abbr[title], acronym[title] { text-decoration: dotted underline; }
+del, s, strike { text-decoration: line-through; }
+blink { text-decoration: blink; }
+
+:focus { outline: auto; }
+
+q:before { content: open-quote; }
+q:after { content: close-quote; }
+
+nobr { white-space: nowrap; }
+listing, plaintext, pre, xmp { white-space: pre; }
+
+ol { list-style-type: decimal; }
+
+dir, menu, ul {
+  list-style-type: disc;
+}
+
+dir dl, dir menu, dir ul,
+menu dl, menu menu, menu ul,
+ol dl, ol menu, ol ul,
+ul dl, ul menu, ul ul {
+  list-style-type: circle;
+}
+
+dir dir dl, dir dir menu, dir dir ul,
+dir menu dl, dir menu menu, dir menu ul,
+dir ol dl, dir ol menu, dir ol ul,
+dir ul dl, dir ul menu, dir ul ul,
+menu dir dl, menu dir menu, menu dir ul,
+menu menu dl, menu menu menu, menu menu ul,
+menu ol dl, menu ol menu, menu ol ul,
+menu ul dl, menu ul menu, menu ul ul,
+ol dir dl, ol dir menu, ol dir ul,
+ol menu dl, ol menu menu, ol menu ul,
+ol ol dl, ol ol menu, ol ol ul,
+ol ul dl, ol ul menu, ol ul ul,
+ul dir dl, ul dir menu, ul dir ul,
+ul menu dl, ul menu menu, ul menu ul,
+ul ol dl, ul ol menu, ul ol ul,
+ul ul dl, ul ul menu, ul ul ul {
+  list-style-type: square;
+}
+
+table { border-style: outset; }
+td, th { border-style: inset; }
+
+[dir=ltr] { direction: ltr; unicode-bidi: embed; } 
+[dir=rtl] { direction: rtl; unicode-bidi: embed; } 
+bdo[dir=ltr], bdo[dir=rtl] { unicode-bidi: bidi-override; } 
+
+td[nowrap], th[nowrap] { white-space: nowrap; }
+pre[wrap] { white-space: pre-wrap; }
+
+br[clear=left] { clear: left; } 
+br[clear=right] { clear: right; } 
+br[clear=all], br[clear=both] { clear: both; } 
+
+ol[type=1], li[type=1] { list-style-type: decimal; }
+ol[type=a], li[type=a] { list-style-type: lower-alpha; } /* case-sensitive */
+ol[type=A], li[type=A] { list-style-type: upper-alpha; } /* case-sensitive */
+ol[type=i], li[type=i] { list-style-type: lower-roman; } /* case-sensitive */
+ol[type=I], li[type=I] { list-style-type: upper-roman; } /* case-sensitive */
+ul[type=disc], li[type=disc] { list-style-type: disc; }
+ul[type=circle], li[type=circle] { list-style-type: circle; }
+ul[type=square], li[type=square] { list-style-type: square; }
+
+table[rules=none], table[rules=groups], table[rules=rows],
+table[rules=cols], table[rules=all] {
+  border-style: none;
+  border-collapse: collapse;
+}
+
+table[frame=void] { border-style: hidden hidden hidden hidden; }
+table[frame=above] { border-style: solid hidden hidden hidden; }
+table[frame=below] { border-style: hidden hidden solid hidden; }
+table[frame=hsides] { border-style: solid hidden solid hidden; }
+table[frame=lhs] { border-style: hidden hidden hidden solid; }
+table[frame=rhs] { border-style: hidden solid hidden hidden; }
+table[frame=vsides] { border-style: hidden solid hidden solid; }
+table[frame=box],
+table[frame=border] { border-style: solid solid solid solid; }
+
+table[rules=none] > tr > td, table[rules=none] > tr > th,
+table[rules=none] > thead > tr > td, table[rules=none] > thead > tr > th,
+table[rules=none] > tbody > tr > td, table[rules=none] > tbody > tr > th,
+table[rules=none] > tfoot > tr > td, table[rules=none] > tfoot > tr > th,
+table[rules=groups] > tr > td, table[rules=groups] > tr > th,
+table[rules=groups] > thead > tr > td, table[rules=groups] > thead > tr > th,
+table[rules=groups] > tbody > tr > td, table[rules=groups] > tbody > tr > th,
+table[rules=groups] > tfoot > tr > td, table[rules=groups] > tfoot > tr > th,
+table[rules=rows] > tr > td, table[rules=rows] > tr > th,
+table[rules=rows] > thead > tr > td, table[rules=rows] > thead > tr > th,
+table[rules=rows] > tbody > tr > td, table[rules=rows] > tbody > tr > th,
+table[rules=rows] > tfoot > tr > td, table[rules=rows] > tfoot > tr > th {
+  border-style: none;
+}
+
+table[rules=groups] > colgroup, table[rules=groups] > thead,
+table[rules=groups] > tbody, table[rules=groups] > tfoot {
+  border-style: solid;
+}
+
+table[rules=rows] > tr, table[rules=rows] > thead > tr,
+table[rules=rows] > tbody > tr, table[rules=rows] > tfoot > tr {
+  border-style: solid;
+}
+
+table[rules=cols] > tr > td, table[rules=cols] > tr > th,
+table[rules=cols] > thead > tr > td, table[rules=cols] > thead > tr > th,
+table[rules=cols] > tbody > tr > td, table[rules=cols] > tbody > tr > th,
+table[rules=cols] > tfoot > tr > td, table[rules=cols] > tfoot > tr > th {
+  border-style: none solid none solid;
+}
+
+table[rules=all] > tr > td, table[rules=all] > tr > th,
+table[rules=all] > thead > tr > td, table[rules=all] > thead > tr > th,
+table[rules=all] > tbody > tr > td, table[rules=all] > tbody > tr > th,
+table[rules=all] > tfoot > tr > td, table[rules=all] > tfoot > tr > th {
+  border-style: solid;
+}
+
+table[border] > tr > td, table[border] > tr > th,
+table[border] > thead > tr > td, table[border] > thead > tr > th,
+table[border] > tbody > tr > td, table[border] > tbody > tr > th,
+table[border] > tfoot > tr > td, table[border] > tfoot > tr > th {
+  border-width: 1px;
+}
+
+/* hr element */
+
+hr { color: gray; border-style: inset; border-width: 1px; margin: 0.5em auto; }
+
+hr[align=left] { margin-left: 0; margin-right: auto; } 
+hr[align=right] { margin-left: auto; margin-right: 0; } 
+hr[align=center] { margin-left: auto; margin-right: auto; } 
+hr[color], hr[noshade] { border-style: solid; }
+
+/* fieldset element */
+
+fieldset {
+  border: groove 2px ThreeDFace;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* Embedded content */
+
+iframe { border: 2px inset; }
+
+img[align=left] { margin-right: 3px; } 
+img[align=right] { margin-left: 3px; } 
+
+iframe[frameborder=0], iframe[frameborder=no] { border: none; } 
+
+applet[align=left], embed[align=left], iframe[align=left],
+img[align=left], input[type=image][align=left], object[align=left] { 
+  float: left;
+}
+
+applet[align=right], embed[align=right], iframe[align=right],
+img[align=right], input[type=image][align=right], object[align=right] { 
+  float: right;
+}
+
+applet[align=top], embed[align=top], iframe[align=top],
+img[align=top], input[type=image][align=top], object[align=top] { 
+  vertical-align: top;
+}
+
+applet[align=bottom], embed[align=bottom], iframe[align=bottom],
+img[align=bottom], input[type=image][align=bottom], object[align=bottom],
+applet[align=baseline], embed[align=baseline], iframe[align=baseline],
+img[align=baseline], input[type=image][align=baseline], object[align=baseline] { 
+  vertical-align: baseline;
+}
+
+applet[align=texttop], embed[align=texttop], iframe[align=texttop],
+img[align=texttop], input[type=image][align=texttop], object[align=texttop] { 
+  vertical-align: text-top;
+}
+
+applet[align=absmiddle], embed[align=absmiddle], iframe[align=absmiddle],
+img[align=absmiddle], input[type=image][align=absmiddle], object[align=absmiddle],
+applet[align=abscenter], embed[align=abscenter], iframe[align=abscenter],
+img[align=abscenter], input[type=image][align=abscenter], object[align=abscenter] { 
+  vertical-align: middle;
+}
+
+applet[align=bottom], embed[align=bottom], iframe[align=bottom],
+img[align=bottom], input[type=image][align=bottom],
+object[align=bottom] { 
+  vertical-align: bottom;
+}
+
+button { binding: button; }
+
+details { binding: details; }
+
+input { binding: input-textfield; }
+input[type=password] { binding: input-password; } 
+input[type=datetime] { binding: input-datetime; } 
+input[type=date] { binding: input-date; } 
+input[type=month] { binding: input-month; } 
+input[type=week] { binding: input-week; } 
+input[type=time] { binding: input-time; } 
+input[type=datetime-local] { binding: input-datetime-local; } 
+input[type=number] { binding: input-number; } 
+input[type=range] { binding: input-range; } 
+input[type=color] { binding: input-color; } 
+input[type=checkbox] { binding: input-checkbox; } 
+input[type=radio] { binding: input-radio; } 
+input[type=file] { binding: input-file; } 
+
+input[type=submit], input[type=reset], input[type=button] { 
+  binding: input-button;
+}
+
+marquee { binding: marquee; }
+meter { binding: meter; }
+progress { binding: progress; }
+select { binding: select;}
+textarea { binding: textarea; }
+keygen { binding: keygen; }
+time[datetime] { binding: time; }
+
+
+
+
+
