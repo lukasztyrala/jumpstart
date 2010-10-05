@@ -337,24 +337,23 @@ table[rules=all] > tfoot > tr > td, table[rules=all] > tfoot > tr > th {
   border-color: black;
 }
 
-
-x h1 {
+section h1,
+article h1 {
   font-size: 1.50em;
 }
 
-x x h1 {
+section section h1,
+article article h1 {
   font-size: 1.17em;
 }
 
-x x x h1 {
+section section section h1,
+article article article h1 {
   font-size: 1.00em;
 }
 
-x x x x h1 {
-  font-size: 0.83em;
-}
-
-x x x x x h1 {
+section section section section h1,
+article article article article h1 {
   font-size: 0.67em;
 }
 
