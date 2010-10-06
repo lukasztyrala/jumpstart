@@ -5,13 +5,19 @@
 
 <head>
 
+  <!-- Content Descriptive Meta -->
+  <title>HTML5 &bull; basic index template</title>
+
   <base href="">
+  <!-- [ref]  http://www.w3.org/TR/html-markup/base.html -->
 
   <meta charset="utf-8">
   <!-- [ref]  http://www.w3.org/TR/html5-diff/#character-encoding -->
 
-  <!-- Content Descriptive Meta -->
-  <title>HTML5 &bull; basic index template</title>
+  <!-- IE compatibility mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- [ref]  http://blogs.msdn.com/b/ie/archive/2010/06/16/ie-s-compatibility-features-for-site-developers.aspx
+              http://www.alistapart.com/articles/beyonddoctype -->
 
   <meta name="application-name" content="">
   <meta name="author" content="">
@@ -86,11 +92,6 @@
   <link rel="search" type="application/opensearchdescription+xml" href="[name].xml" title="">
   <!-- [ref]  http://opensearch.org -->
 
-  <!-- IE compatibility mode -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- [ref]  http://blogs.msdn.com/b/ie/archive/2010/06/16/ie-s-compatibility-features-for-site-developers.aspx
-              http://www.alistapart.com/articles/beyonddoctype -->
-
   <!-- IE conditional comments -->
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="less-than-ie8.css" media="screen">
@@ -110,9 +111,30 @@
     ***************************************************
   -->
   
-  <!-- Javascripts. Yes. At the bottom, but before </body>. To makes things load faster -->
-  <script src="[name].js"></script>
+
+  <!-- Javascripts. Yes. At the bottom, but before </body>. To makes things load faster.
+       Remeber that Modernizr script should be places inside <head>! -->
+
+  <!-- Load jQuery from Google CDN... -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <!-- ... or from local -->
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
+  <!-- [ref]  http://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+
+
+  <script src="/js/[name].js"></script>
   <!-- [ref]  http://developer.yahoo.net/blog/archives/2007/07/high_performanc_5.html -->
+
+  <script>
+    var _gaq = [['_setAccount', /* Your: 'UA-XXXXX-X' */], ['_trackPageview']];
+      nction(d, t) {
+      var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      g.async = true;
+      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g, s);
+    })(document, 'script');
+  </script>
 
 </body>
 </html>
