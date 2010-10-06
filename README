@@ -19,6 +19,8 @@ JUMPSTART (**alpha** version)          http://github.com/lukasztyrala/jumpstart
   html/     -- index.html (with and without refs and comments), html5 elements
   js/       -- common js libs
   snippets/ -- basic styles for common html elements (eg. nav, buttons, etc.)
+  txt/      -- various files like .gitignore.sample, robots.txt, etc.
+  xml/      -- various xml files like opensearch, sitemap and rss
 
 # Licence
 

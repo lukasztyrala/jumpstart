@@ -1,0 +1,10 @@
+# http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+
+.DS_Store
+.gitignore
+.gitignore.sample
+.project
+.svn
+Thumb.db
+nbproject
+temp

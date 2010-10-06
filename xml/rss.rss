@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"> 
+   <channel> 
+      <title>Example News</title> 
+      <link>http://example.com/</link> 
+      <description>News from example.com</description> 
+      <language>en-us</language> 
+      <pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate> 
+      <item> 
+         <title>Star City</title> 
+         <link>http://example/2010/10/10/item.html</link> 
+         <description></description> 
+         <pubDate>Tue, 03 Jun 2003 09:39:21 GMT</pubDate> 
+         <guid>http://example/2010/10/10/item.html</guid> 
+      </item> 
+   </channel> 
+</rss>
