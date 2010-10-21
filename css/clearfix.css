@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
+.clearfix:before,
 .clearfix:after {
-  clear: both;
   content: ".";
   display: block;
   height: 0;
-  visibility: hidden;
+  visibility: hidden; 
   }
 
-* html .clearfix,
-*+html .clearfix {
+.clearfix:after {
+  clear: both;
+  }
+
+.clearfix {
   zoom: 1;
   }
+
+/* [ref]  http://www.tjkdesign.com/lab/clearfix/new-clearfix.html */
