@@ -120,7 +120,7 @@
   
   <!-- Only Modernizr script goes into <head> (it handles the HTML5 elements). 
        The rest of the scripts should go before </body> -->
-  <script src="/js/modernizr-1.5.min.js"></script>
+  <script src="/js/modernizr-1.6.min.js"></script>
 
 </head>
 
@@ -140,9 +140,9 @@
        Remeber that Modernizr script should be places inside <head>! -->
 
   <!-- Load jQuery from Google CDN... -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.js"></script>
   <!-- ... or from local -->
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery-1.4.3.min.js"%3E%3C/script%3E'))</script>
   <!-- [ref]  http://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
 
 
@@ -150,8 +150,8 @@
   <!-- [ref]  http://developer.yahoo.net/blog/archives/2007/07/high_performanc_5.html -->
 
   <script>
-    var _gaq = [['_setAccount', /* Your: 'UA-XXXXX-X' */], ['_trackPageview']];
-      nction(d, t) {
+    var _gaq = [['_setAccount', 'UA-12345-6'], ['_trackPageview']];
+    (function(d, t) {
       var g = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
       g.async = true;
@@ -159,6 +159,6 @@
       s.parentNode.insertBefore(g, s);
     })(document, 'script');
   </script>
-
+  
 </body>
 </html>
