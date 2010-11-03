@@ -1,10 +1,11 @@
 # http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
 
-.DS_Store
-.gitignore
-.gitignore.sample
+.svn/
+.hg/
 .project
-.svn
-Thumb.db
-nbproject
-temp
+.gitignore
+.DS_Store
+__MACOSX/
+nbproject/
+temp/
+thumb.db
