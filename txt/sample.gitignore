@@ -1,0 +1,34 @@
+# http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+# https://github.com/github/gitignore
+
+.svn/
+.hg/
+.gitignore
+
+# OSX
+.DS_Store
+.ackrc
+*.swp
+
+# Win
+Thumbs.db
+Desktop.ini
+
+# NetBeans
+nbproject/
+
+# Eclipse
+.project
+.metadata
+tmp/**
+*.tmp
+*.bak
+tmp/**/*
+*~.nib
+local.properties
+.classpath
+.settings/
+
+# vim
+.*.sw[a-z]
+
