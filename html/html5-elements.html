@@ -11,14 +11,15 @@
 <nav></nav>
 <article></article>
 <aside></aside>
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
-<h5></h5>
-<h6></h6>
 <header></header>
-<hgroup></hgroup>
+<hgroup>
+  <h1></h1>
+  <h2></h2>
+  <h3></h3>
+  <h4></h4>
+  <h5></h5>
+  <h6></h6>
+</hgroup>
 <footer></footer>
 <address></address>
 
@@ -27,18 +28,22 @@
 <hr>
 <pre></pre>
 <blockquote cite=""></blockquote>
-<ol reversed start=""></ol>
-<ul></ul>
-<li></li>
-<dl></dl>
-<dt></dt>
-<dd></dd>
-<figure></figure>
-<figcaption></figcaption>
+<ol reversed start="0">
+  <li></li>
+</ol>
+<ul>
+  <li></li>
+</ul>
+<dl>
+  <dt></dt>
+  <dd></dd>
+</dl>
+<figure>
+  <figcaption></figcaption>
+</figure>
 <div></div>
-
 <!-- Text-level semantics -->
-<a href="" target="" rel="" media="" hreflang="" type=""></a>
+<a href="/" target="_blank" rel="" media="screen" hreflang="" type="text/css"></a>
 <em></em>
 <strong></strong>
 <small></small>
@@ -46,7 +51,7 @@
 <q cite=""></q>
 <dfn title=""></dfn>
 <abbr title=""></abbr>
-<time datetime="" pubdate></time>
+<time datetime="2000-10-10T12:00:00.6-02:00" pubdate></time>
 <code></code>
 <var></var>
 <samp></samp>
@@ -56,17 +61,18 @@
 <i></i>
 <b></b>
 <mark></mark>
-<ruby></ruby>
-<rt></rt>
-<rp></rp>
+<ruby>
+  <rt></rt>
+  <rp></rp>
+</ruby>
 <bdo dir=""></bdo>
 <span></span>
 <br>
 <wbr>
 
 <!-- Edits -->
-<ins cite="" datetime=""></ins>
-<del cite="" datetime=""></del>
+<ins cite="" datetime="2000-10-10T12:00:00.6-02:00"></ins>
+<del cite="" datetime="2000-10-10T12:00:00.6-02:00"></del>
 
 <!-- Embedded content -->
 <img alt="" src="" usemap="" ismap width="" height="">
@@ -82,16 +88,20 @@
 <area alt="" coords="" shape="" href="" target="" rel="" media="" hreflang="" type=""></area>
 
 <!-- Tabular elements -->
-<table summary=""></table>
-<caption></caption>
-<colgroup span=""></colgroup>
-<col span="">
-<tbody></tbody>
-<thead></thead>
-<tfoot></tfoot>
-<tr></tr>
-<td colspan="" rowspan="" headers=""></td>
-<th colspan="" rowspan="" scope=""></th>
+<table summary="">
+  <caption></caption>
+  <colgroup span="">
+    <col span="">
+  </colgroup>
+  <thead></thead>
+  <tbody>
+    <tr>
+      <th colspan="" rowspan="" scope=""></th>
+      <td colspan="" rowspan="" headers=""></td>
+    </tr>
+  </tbody>
+  <tfoot></tfoot>
+</table>
 
 <!-- Forms -->
 <form accept-charset="" action="" autocomplete="" enctype="" method="" name="" novalidate target=""></form>

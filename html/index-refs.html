@@ -108,6 +108,9 @@
 
   <link rel="canonical" href="http://www.example.com/product.php?item=example-item" />
   <!-- [ref]  http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
+  
+  <link rel="author" href="/txt/humans.txt" />
+  <!-- [ref]  http://humanstxt.org/Standard.html -->
 
   <meta name="google-site-verification" content="[unique_string]" />
   <!-- [ref]  http://www.google.com/support/webmasters/bin/answer.py?answer=35638#3 -->
@@ -118,10 +121,35 @@
   <![endif]-->
   <!-- [ref]  http://msdn.microsoft.com/en-us/library/ms537512.aspx -->
   
-  <!-- Only Modernizr script goes into <head> (it handles the HTML5 elements). 
-       The rest of the scripts should go before </body> -->
-  <script src="/js/modernizr-1.6.min.js"></script>
+  <!-- Some scripts must go into <head>
+       Most of the scripts should go before </body> -->
+  <script src="/js/modernizr-1.7.min.js"></script>
 
+  
+    
+  <!-- Typekit font loading asunchronous pattern. Check references to read about 
+       other scripts you might want to use. -->
+  <script type="text/javascript">
+    TypekitConfig = {
+      kitId: 'abc1def'
+    };
+    (function() {
+      var tk = document.createElement('script');
+      tk.src = '//use.typekit.com/' + TypekitConfig.kitId + '.js';
+      tk.type = 'text/javascript';
+      tk.async = 'true';
+      tk.onload = tk.onreadystatechange = function() {
+        var rs = this.readyState;
+        if (rs && rs != 'complete' && rs != 'loaded') return;
+        try { Typekit.load(TypekitConfig); } catch (e) {}
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(tk, s);
+    })();
+  </script>
+  <!-- [ref]  http://blog.typekit.com/2011/05/25/loading-typekit-fonts-asynchronously -->
+
+  
 </head>
 
 <body id="" class="">
@@ -135,30 +163,36 @@
     ***************************************************
   -->
   
-
   <!-- Javascripts. Yes. At the bottom, but before </body>. To makes things load faster.
        Remeber that Modernizr script should be places inside <head>! -->
-
-  <!-- Load jQuery from Google CDN... -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.js"></script>
-  <!-- ... or from local -->
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery-1.4.3.min.js"%3E%3C/script%3E'))</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.6.1.min.js">\x3C/script>')</script>
   <!-- [ref]  http://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
 
-
-  <script src="/js/[name].js"></script>
+  <script src="/js/.js"></script>
   <!-- [ref]  http://developer.yahoo.net/blog/archives/2007/07/high_performanc_5.html -->
 
+  <!-- Google Anylitics tracking code improved by Mathias Bynens: -->
   <script>
-    var _gaq = [['_setAccount', 'UA-12345-6'], ['_trackPageview']];
-    (function(d, t) {
-      var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      g.async = true;
-      g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g, s);
-    })(document, 'script');
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
+  <!-- [ref]  http://mathiasbynens.be/notes/async-analytics-snippet -->
+  
+  <!-- Google Anylitics tracking code as defined by Google: -->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- [ref]  http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html -->
   
 </body>
 </html>

@@ -1,10 +1,16 @@
+-------------------------------------------------------------------------------
+JUMPSTART                              http://github.com/lukasztyrala/jumpstart
+-------------------------------------------------------------------------------
 
-JUMPSTART (**alpha** version)          http://github.com/lukasztyrala/jumpstart
-===============================================================================
+                                                      "A great code starts with
+                                                       index.html, Luke!"
 
-  .-------------------------------------------------------------------------.
-  | A simple project to jumpstart your basic front-end stuff                |
-  '-------------------------------------------------------------------------'
+# Bugs and suggestions
+
+  Report anything that comes to your mind (and is related to the project) here:
+  https://github.com/lukasztyrala/jumpstart/issues
+
+  Thanks for any comments!
 
 # About
 
@@ -12,6 +18,9 @@ JUMPSTART (**alpha** version)          http://github.com/lukasztyrala/jumpstart
   cover basic front-end stuff like: basic html5 layout, css reset, common js
   libs. The usage of tags and code is referenced and commented (files stripped
   from refs and comments are also available).
+
+  If you need something more robust and dynamic, check out HTML5 Boilerplate
+  project: https://github.com/paulirish/html5-boilerplate
 
 # Files
 
@@ -25,8 +34,9 @@ JUMPSTART (**alpha** version)          http://github.com/lukasztyrala/jumpstart
 # Licence
 
   Check references if you need to know who wrote what and relesed under what
-  licence. For code written by me you can use MIT licence.
-  
+  licence.
+
+  For code written by me you can use MIT licence.
   
   MIT LICENCE [http://www.opensource.org/licenses/mit-license.php]
   
