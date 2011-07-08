@@ -122,8 +122,9 @@
   <!-- [ref]  http://msdn.microsoft.com/en-us/library/ms537512.aspx -->
   
   <!-- Some scripts must go into <head>
-       Most of the scripts should go before </body> -->
-  <script src="/js/modernizr-1.7.min.js"></script>
+       Most of the scripts should go before </body>
+       Remember to include minified version on production server -->
+  <script src="/js/modernizr-2.0.js"></script>
 
   
     
@@ -165,8 +166,9 @@
   
   <!-- Javascripts. Yes. At the bottom, but before </body>. To makes things load faster.
        Remeber that Modernizr script should be places inside <head>! -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/jquery-1.6.1.min.js">\x3C/script>')</script>
+  <!-- Remember to include minified version on production server and use CDNs if possible:
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.6.2.js">\x3C/script>')</script>
   <!-- [ref]  http://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
 
   <script src="/js/.js"></script>
